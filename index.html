@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- local Css file -->
+    <link rel="stylesheet" href="index.css">
+
+    <script type="text/javascript" src="index.js" ></script>
+
+
+<title>Page Title</title>
+</head>
+<body>
+<div>
+
+    <!-- All should be designed in this single div element -->
+
+
+<header>
+        <div class="topnav" id="myTopnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">Acounts</a>
+                <a href="#contact">Budget</a>
+                <a href="#about">Transactions</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+        </div>
+</header>
+<main>
+        <div class="container">
+                <label style="color:blue;font-weight:bold;">Accounts</label>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="account">Account</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="account" name="account" placeholder="Your account..">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="balance">Balance</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="balance" name="balance" placeholder="Account balance..">
+                    </div>
+                    </div>
+                
+            
+                    <div class="row">
+                    <input type="submit" value="Add" onclick="showBalance()">
+                    </div>
+                
+        </div>
+
+        <div class="container">
+                <label style="color:blue;font-weight:bold;">Budget</label>
+                <div class="row">
+                <div class="col-25">
+                    <label for="title">Title</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="title" name="title" placeholder="Your account..">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                    <label for="expected">Expected</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="expected" name="expected" placeholder="Account balance..">
+                </div>
+                </div>
+            
+        
+                <div class="row">
+                <input type="submit" value="Add" onclick="showItem()">
+                </div>
+            
+    </div>
+</main>
+
+<footer>Footer</footer>
+    <!-- All should be designed in this single div element -->
+</div>
+</body>
+</html>
